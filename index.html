@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- GENERAL STYLES FOR THE INTRO-SECTION PAGE -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- THE NAVIGATION SECTION  -->
+      <nav class="nav">
+        <figure>
+          <img src="images/logo.svg" alt="logo image" class="logo" />
+        </figure>
+
+        <!-- THE NAVIGATION MENU TOGGLE -->
+        <div class="navigation">
+          <input type="checkbox" id="menu-toggle" class="navigation-input" />
+          <label for="menu-toggle" class="navigation-button">
+            <span class="navigation-icon">&nbsp;</span>
+          </label>
+          <div class="navigation-background">&nbsp;</div>
+
+          <!-- THE NAVIGATION SLIDE OUT MENU -->
+          <div class="navigation__slide">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">
+                  <span>Features</span>
+                  <img
+                    src="images/icon-arrow-down.svg"
+                    alt="arrow down"
+                    class="navigation-slide-icon"
+                  />
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">
+                  <span>Company</span>
+                  <img
+                    src="images/icon-arrow-down.svg"
+                    alt="arrow down"
+                    class="navigation-slide-icon"
+                  />
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link"><span>Careers</span></a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link"><span>About</span></a>
+              </li>
+            </ul>
+
+            <!-- THE NAVIGATION LOGIN AND REGISTER BUTTONS -->
+            <div class="navigation__btns">
+              <button class="btn">Login</button>
+              <button class="btn bordered">Register</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- THE HEADER BODY e.g IMAGE, TEXTS, BUTTONS etc... -->
+
+      <header class="header">
+        <!-- HEADER IMAGE FOR DIFFERENT SCREEN SIZE-->
+        <picture class="header__photo">
+          <source
+            media="(max-width: 37.5rem)"
+            srcset="images/image-hero-mobile.png"
+          />
+
+          <img
+            src="images/image-hero-desktop.png"
+            alt="Full techy image"
+            class="header__photo--img"
+          />
+        </picture>
+
+        <!-- HEADER TEXT/CONTENT -->
+        <div class="header__content">
+          <h2 class="heading-2">Make remote work</h2>
+          <p class="header__content-text">
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button class="btn btn--colored">Learn more</button>
+        </div>
+
+        <!-- HEADER LOGO OR SNAP(SITE OWNER) COMPANY SPONSORS SNAP -->
+        <div class="header__logos">
+          <figure class="header__logo">
+            <img
+              src="images/client-databiz.svg"
+              alt="databiz"
+              class="header__icon"
+            />
+          </figure>
+          <figure class="header__logo">
+            <img
+              src="images/client-audiophile.svg"
+              alt="audiophile"
+              class="header__icon"
+            />
+          </figure>
+          <figure class="header__logo">
+            <img src="images/client-meet.svg" alt="meet" class="header__icon" />
+          </figure>
+          <figure class="header__logo">
+            <img
+              src="images/client-maker.svg"
+              alt="maker"
+              class="header__icon"
+            />
+          </figure>
+        </div>
+      </header>
+      <!-- END OF HEADER -->
+    </div>
+
+    <!-- END OF CONTAINER DIV -->
+  </body>
+</html>
