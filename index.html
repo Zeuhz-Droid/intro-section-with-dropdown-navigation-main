@@ -33,6 +33,10 @@
           <img src="images/logo.svg" alt="logo image" class="logo" />
         </figure>
 
+        <!-- DESKTOP/ LARGE SCREEN NAVIGATION MENU -->
+
+        <!-- END -->
+
         <!-- THE NAVIGATION MENU TOGGLE -->
         <div class="navigation">
           <input type="checkbox" id="menu-toggle" class="navigation__input" />
@@ -53,7 +57,7 @@
                     <img
                       src="images/icon-arrow-down.svg"
                       alt="arrow down"
-                      class="navigation__slide-icon"
+                      class="navigation__slide-icon--1"
                     />
                   </a>
                   <div class="dropdown--1 show">
@@ -106,7 +110,7 @@
                     <img
                       src="images/icon-arrow-down.svg"
                       alt="arrow down"
-                      class="navigation-slide-icon"
+                      class="navigation__slide-icon--2"
                     />
                   </a>
                   <div class="dropdown--2 show">
@@ -145,18 +149,20 @@
 
       <header class="header">
         <!-- HEADER IMAGE FOR DIFFERENT SCREEN SIZE-->
-        <picture class="header__photo">
-          <source
-            media="(max-width: 37.5rem)"
-            srcset="images/image-hero-mobile.png"
-          />
+        <figure class="header__photo">
+          <picture>
+            <source
+              media="(max-width: 37.5rem)"
+              srcset="images/image-hero-mobile.png"
+            />
 
-          <img
-            src="images/image-hero-desktop.png"
-            alt="Full techy image"
-            class="header__photo-img"
-          />
-        </picture>
+            <img
+              src="images/image-hero-desktop.png"
+              alt="Full techy image"
+              class="header__photo-img"
+            />
+          </picture>
+        </figure>
 
         <!-- HEADER TEXT/CONTENT -->
         <div class="header__content">
