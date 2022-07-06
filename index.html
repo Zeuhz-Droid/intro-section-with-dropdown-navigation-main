@@ -45,7 +45,10 @@
             <div class="navigation__slide">
               <ul class="navigation__list">
                 <li class="navigation__item">
-                  <a href="#" class="navigation__link">
+                  <a
+                    href="#"
+                    class="navigation__link navigation__link--features"
+                  >
                     <span>Features</span>
                     <img
                       src="images/icon-arrow-down.svg"
@@ -53,9 +56,52 @@
                       class="navigation__slide-icon"
                     />
                   </a>
+                  <div class="dropdown--1 show">
+                    <ul class="dropdown__list">
+                      <li class="dropdown__item">
+                        <a href="#" class="dropdown__link"
+                          ><span
+                            ><img
+                              src="images/icon-todo.svg"
+                              alt="to do" /></span
+                          >Todo List</a
+                        >
+                      </li>
+                      <li class="dropdown__item">
+                        <a href="#" class="dropdown__link"
+                          ><span
+                            ><img
+                              src="images/icon-calendar.svg"
+                              alt="calender" /></span
+                          >calender</a
+                        >
+                      </li>
+                      <li class="dropdown__item">
+                        <a href="#" class="dropdown__link"
+                          ><span
+                            ><img
+                              src="images/icon-reminders.svg"
+                              alt="reminders" /></span
+                          >Reminders</a
+                        >
+                      </li>
+                      <li class="dropdown__item">
+                        <a href="#" class="dropdown__link"
+                          ><span
+                            ><img
+                              src="images/icon-planning.svg"
+                              alt="planning" /></span
+                          >Planning</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
                 </li>
                 <li class="navigation__item">
-                  <a href="#" class="navigation__link">
+                  <a
+                    href="#"
+                    class="navigation__link navigation__link--company"
+                  >
                     <span>Company</span>
                     <img
                       src="images/icon-arrow-down.svg"
@@ -63,6 +109,19 @@
                       class="navigation-slide-icon"
                     />
                   </a>
+                  <div class="dropdown--2 show">
+                    <ul class="dropdown__list">
+                      <li class="dropdown__item">
+                        <a href="#" class="dropdown__link">History</a>
+                      </li>
+                      <li class="dropdown__item">
+                        <a href="#" class="dropdown__link">Our Team</a>
+                      </li>
+                      <li class="dropdown__item">
+                        <a href="#" class="dropdown__link">Blog</a>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
                 <li class="navigation__item">
                   <a href="#" class="navigation__link"><span>Careers</span></a>
@@ -107,39 +166,45 @@
             processes, create team rituals, and watch productivity soar.
           </p>
           <button class="btn btn--colored">Learn more</button>
-        </div>
 
-        <!-- HEADER LOGO OR SNAP(SITE OWNER) COMPANY SPONSORS SNAP -->
-        <div class="header__logos">
-          <figure class="header__logo">
-            <img
-              src="images/client-databiz.svg"
-              alt="databiz"
-              class="header__icon"
-            />
-          </figure>
-          <figure class="header__logo">
-            <img
-              src="images/client-audiophile.svg"
-              alt="audiophile"
-              class="header__icon"
-            />
-          </figure>
-          <figure class="header__logo">
-            <img src="images/client-meet.svg" alt="meet" class="header__icon" />
-          </figure>
-          <figure class="header__logo">
-            <img
-              src="images/client-maker.svg"
-              alt="maker"
-              class="header__icon"
-            />
-          </figure>
+          <!-- HEADER LOGO OR SNAP(SITE OWNER) COMPANY SPONSORS SNAP -->
+          <div class="header__logos">
+            <figure class="header__logo">
+              <img
+                src="images/client-databiz.svg"
+                alt="databiz"
+                class="header__icon"
+              />
+            </figure>
+            <figure class="header__logo">
+              <img
+                src="images/client-audiophile.svg"
+                alt="audiophile"
+                class="header__icon"
+              />
+            </figure>
+            <figure class="header__logo">
+              <img
+                src="images/client-meet.svg"
+                alt="meet"
+                class="header__icon"
+              />
+            </figure>
+            <figure class="header__logo">
+              <img
+                src="images/client-maker.svg"
+                alt="maker"
+                class="header__icon"
+              />
+            </figure>
+          </div>
         </div>
       </header>
       <!-- END OF HEADER -->
     </div>
 
     <!-- END OF CONTAINER DIV -->
+
+    <script src="app.js" type="text/javascript"></script>
   </body>
 </html>
