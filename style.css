@@ -332,7 +332,7 @@ body {
   font-size: 1.2rem;
   font-style: italic;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 8rem;
 }
 
 .attribution a:link,
@@ -399,6 +399,10 @@ body {
     gap: 4rem;
   }
 
+  .navigation__link:link {
+    font-size: 1.5rem;
+  }
+
   .navigation__item {
     padding: 0;
     position: relative;
@@ -411,11 +415,13 @@ body {
   } */
 
   .navigation__btns {
+    font-size: 1.5rem;
     flex-direction: row;
     justify-items: center;
   }
 
   .dropdown {
+    font-size: 1.5rem;
     position: absolute;
     top: 150%;
     right: 15%;
@@ -458,8 +464,8 @@ body {
   }
 
   .heading--2 {
-    font-size: 7rem;
-    width: 83%;
+    font-size: 6.5rem;
+    width: 78%;
   }
 
   .header__content-text {
