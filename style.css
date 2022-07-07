@@ -22,6 +22,7 @@ html {
 body {
   font-family: "Epilogue", sans-serif;
   font-size: 1.8rem;
+  background-color: var(--almost-White);
 }
 
 .container {
@@ -374,6 +375,7 @@ body {
   }
 
   .navigation__background {
+    display: block;
     height: max-content;
     width: auto;
     background-color: inherit;
@@ -456,7 +458,8 @@ body {
   }
 
   .heading--2 {
-    font-size: 8.5rem;
+    font-size: 7rem;
+    width: 83%;
   }
 
   .header__content-text {
