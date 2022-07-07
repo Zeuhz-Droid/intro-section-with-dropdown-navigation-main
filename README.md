@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/Zeuhz-Droid/intro-section-with-dropdown-navigation-main)
+- Live Site URL: [Add live site URL here](https://zeuhz-droid.github.io/intro-section-with-dropdown-navigation-main/)
 
 ## My process
 
