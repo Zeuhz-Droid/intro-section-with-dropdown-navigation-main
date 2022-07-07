@@ -130,7 +130,7 @@ body {
 
 .navigation__link:link,
 .navigation__link:visited {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: var(--medium-gray);
   text-decoration: none;
   transition: all 0.2s;
@@ -209,7 +209,7 @@ body {
 }
 
 .dropdown__link {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: var(--medium-gray);
   text-decoration: none;
 }
