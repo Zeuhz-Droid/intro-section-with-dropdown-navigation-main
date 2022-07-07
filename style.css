@@ -259,6 +259,10 @@ body {
   font-weight: 700;
 }
 
+.heading--2.desktop {
+  display: none;
+}
+
 .header__photo {
   width: 100%;
 }
@@ -465,7 +469,15 @@ body {
 
   .heading--2 {
     font-size: 6.5rem;
-    width: 78%;
+    width: 100%;
+  }
+
+  .heading--2.desktop {
+    display: block;
+  }
+
+  .heading--2.mobile {
+    display: none;
   }
 
   .header__content-text {
