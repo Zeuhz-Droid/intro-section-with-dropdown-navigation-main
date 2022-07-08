@@ -99,14 +99,18 @@ body {
 .navigation__background {
   height: 100vh;
   width: 0;
-  display: none;
-  background-color: var(--almost-White);
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.5) 40%,
+    rgba(255, 255, 255, 1) 40%
+  );
 
   position: absolute;
   top: 0;
   right: 0;
 
   transition: all 0.2s;
+  /* overflow: hidden; */
 }
 
 .navigation__slide {
@@ -117,6 +121,11 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  transform: translateX(-300%);
+
+  position: relative;
+  top: 0;
+  left: 40%;
 }
 
 .navigation__list {
@@ -146,11 +155,12 @@ body {
   color: var(--almost-black);
 }
 
-.navigation__link:hover .navigation__slide-icon--1 {
+.navigation__link:hover .navigation__slide-icon--features {
   fill: var(--almost-black);
 }
 
 .navigation__btns {
+  width: 55%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -161,12 +171,17 @@ body {
 /* NAVIGATION TOGGLE FUNCTIONALITY */
 .navigation__input:checked ~ .navigation__background {
   display: block;
-  width: 60vw;
+  width: 100vw;
+}
+
+.navigation__input:checked ~ .navigation__background::before {
+  width: 100vw;
 }
 
 .navigation__input:checked ~ .navigation__background .navigation__slide {
   opacity: 1;
   visibility: visible;
+  transform: translateX(0);
 }
 
 .navigation__input:checked ~ .navigation__button .navigation__icon {
@@ -186,10 +201,14 @@ body {
 
 /* NAVIGATION LINK'S DROPDOWN BOX OF BOTH FEATURES AND COMPANY */
 
-.show {
+.hide {
   opacity: 0;
   height: 0;
   visibility: hidden;
+}
+
+.show {
+  animation: dropstyle 0.2s linear;
 }
 
 .dropdown {
@@ -259,6 +278,9 @@ body {
   font-weight: 700;
 }
 
+.heading--2.mobile {
+  display: block;
+}
 .heading--2.desktop {
   display: none;
 }
@@ -365,6 +387,26 @@ body {
   }
 }
 
+@keyframes dropstyle {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    height: 0vh;
+  }
+
+  75% {
+    opacity: 0;
+    visibility: hidden;
+    height: 15vh;
+  }
+
+  100% {
+    opacity: 1;
+    visibility: visible;
+    height: 20vh;
+  }
+}
+
 /* MEDIA QUERIES FOR GENERAL STYLES */
 
 @media screen and (min-width: 40em) {
@@ -382,18 +424,27 @@ body {
     display: block;
     height: max-content;
     width: auto;
-    background-color: inherit;
+    background-image: inherit;
     position: unset;
   }
 
   .navigation__slide {
     width: 85vw;
     opacity: 1;
-    margin-top: 0;
     visibility: visible;
+    margin-top: 0;
     flex-direction: row;
     justify-content: space-between;
+    transform: translateX(0);
+
+    position: initial;
+    z-index: 100;
   }
+  /* 
+  .navigation__slide-icon--features,
+  .navigation__slide-icon--company {
+    transition: all 1s;
+  } */
 
   .navigation__list {
     padding: 1rem;
@@ -417,11 +468,17 @@ body {
     visibility: visible;
     height: max-content;
   } */
+  /* 
+  .navigation__link:hover img {
+    fill: aqua;
+    transition: all 1s;
+  } */
 
   .navigation__btns {
     font-size: 1.5rem;
     flex-direction: row;
     justify-items: center;
+    justify-content: flex-end;
   }
 
   .dropdown {
@@ -468,7 +525,7 @@ body {
   }
 
   .heading--2 {
-    font-size: 6.5rem;
+    font-size: 6rem;
     width: 100%;
   }
 
