@@ -251,7 +251,7 @@ body {
 
 /* HEADER CONTENT i.e OTHER CONTENT IN THE HEADER OTHER THAN THE NAV */
 
-.header {
+#pass-header {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 5rem;
@@ -479,7 +479,7 @@ body {
     padding-bottom: 2rem;
   }
 
-  .header {
+  #pass-header {
     width: 80vw;
     margin: 0 auto;
     align-items: flex-end;
